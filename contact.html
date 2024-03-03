@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@600&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+
+.contact {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    width: 100%;
+}
+.div-grey-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 30vh;
+    width: 40vh;
+    background-color: rgb(180, 180, 180);
+}
+.card-n p , li {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+</style>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img style="width: 210px;" src="images/logo.png" alt="">
+        </div>
+        <div class="cont">
+            <div class="btn">
+                <button onclick="stgFunction('calladoc')">Call A Doctor</button>
+                <button onclick="stgFunction('bookabed')">Book A Bed</button>
+            </div>
+
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+        </div>
+    </div>
+
+    <div class="contact" >
+        <div class="heading-cont">
+            <h1>Contact Us:-</h1>
+        </div>
+        <div class="contact-cards">
+            <div class="div-grey-contact">
+                <div class="head-card">
+                    <h1>Call Us</h1>
+                </div>
+                <div class="card-n" style="margin: auto;">
+                    <p>+91 xx777 7777x</p>
+                    <p>+91 xx777 7777x</p>
+                </div>
+            </div>
+            <div class="div-grey-contact">
+                <div class="head-card">
+                    <h1>Email</h1>
+                </div>
+                <div class="card-n" style="margin: auto;">
+                    <p>Contact@hospitech.com</p>
+                    <p>Career@hospitech.com</p>
+                </div>
+            </div>
+            <div class="div-grey-contact">
+                <div class="head-card">
+                    <h1>Address</h1>
+                </div>
+                <div class="card-n" style="align-items: center;  margin: auto; text-align: left; align-items: left;">
+                    <!-- <ul style=""> -->
+                        <li>Ahmedabad</li>
+                        <li>Vadodra</li>
+                        <li>Surat</li>
+                        <li>Anand</li>
+                    <!-- </ul> -->
+                </div>
+                
+            </div>
+            <div class="div-grey-contact">
+                <div class="head-card">
+                    <h1>Open Hours</h1>
+                </div>
+                <div class="card-n" style="margin: auto;">
+                    <ul style="text-align: left; align-items: left;">
+                        <li>24 * 7 open</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="map" style="display: flex; align-items: center; justify-content: center;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14685.660353003226!2d72.57241540108349!3d23.045238961915473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e841a8fb6688b%3A0x74c28945e5a91979!2sCivil%20Hospital%20Campus%2C%20Ahmedabad!5e0!3m2!1sen!2sin!4v1709450464146!5m2!1sen!2sin" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

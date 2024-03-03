@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@600&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+
+</style>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img style="width: 210px;" src="images/logo.png" alt="">
+        </div>
+        <div class="cont">
+            <div class="btn">
+                <button onclick="stgFunction('calladoc')">Call A Doctor</button>
+                <button onclick="stgFunction('bookabed')">Book A Bed</button>
+            </div>
+
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+        </div>
+    </div>
+
+    <div class="container_1"  >
+        <div class="about-doc-cont" >
+            <div class="ph">
+                <img  src="images/doc.jpg" alt="">
+            </div>
+            <div class="ab-doc" >
+                <div class="list" style="height: 10px; width: 360px; font-size: 20px; ">
+                    <h1>About Our Doctors</h1>
+                    <ul style="list-style-type: disc;">
+                        <li>Loving</li>
+                        <li>Adaptablity</li>
+                    </ul>
+                    <ul style="list-style-type: disc;">
+                        <li>Caring</li>
+                        <li>Precision</li>
+                        
+                    </ul>
+                    
+                    <ul style="list-style-type: disc;">
+                        <li>Educated</li>
+                        <li>Communication</li>
+                    </ul>
+                    <div class="doc-desc">
+                        <br>
+                        <p>
+                            Dr. Fatima is a highly renowned and compassionate medical practitioner in the state, celebrated for her exceptional expertise in [specific field] and her dedication to improving community health through outreach and education. Her legacy shines as a beacon of medical excellence and empathy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="doc-sec" >
+            <div class="img-desc" onclick="changePage('ahmedabad')">
+                <div class="div-grey" >
+                    <div class="img-cont-sec" >
+                        <img   src="images/hosp.jpg" alt="">
+                    </div>
+                    <div class="head-img" style="margin-left: 10px;">
+                        <h2 style="font-size: 40px; color: red;">Ahmedabad</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="img-desc" onclick="changePage('vadodra')">
+                <div class="div-grey" >
+                    <div class="img-cont-sec" >
+                        <img   src="images/v_hosp.jpeg" alt="">
+                    </div>
+                    <div class="head-img" style="margin-left: 10px;">
+                        <h2 style="font-size: 40px; color: red;">Vadadora</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="img-desc" onclick="changePage('anand')">
+                <div class="div-grey" >
+                    <div class="img-cont-sec" >
+                        <img   src="images/a_hosp.jpeg" alt="">
+                    </div>
+                    <div class="head-img" style="margin-left: 10px;">
+                        <h2 style="font-size: 40px; color: red;">Anand</h2>
+                    </div>
+                </div>
+            </div>
+
+       
+            
+           
+        </div>
+        
+    </div>
+</body>
+<script src="index.js"></script>
+<script>
+    const changePage = (city)  => {
+        if(city == "ahmedabad") {
+            window.location.replace('/index.html')
+        }
+        else if(city == "vadodra") {
+            window.location.replace('/vadodra.html')
+        }
+        else if(city == "anand") {
+            window.location.replace('/anand.html')
+        }
+    }
+</script>
+</html>
